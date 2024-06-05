@@ -21,14 +21,14 @@ You can choose from one of the following two methods to use this repository:
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/edge-functions/vercel-og-nextjs&project-name=vercel-og-nextjs&repository-name=vercel-og-nextjs)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/PHI-LABS-INC/artist-template/tree/main/example/vercel-og&project-name=vercel-og-phi&repository-name=vercel-og-phi&)
 
 ### Clone and Deploy
 
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [pnpm](https://pnpm.io/installation) to bootstrap the example:
 
 ```bash
-pnpm create next-app --example https://github.com/vercel/examples/tree/main/edge-functions/vercel-og-nextjs
+pnpm create next-app --example https://github.com/PHI-LABS-INC/artist-template/tree/main/example/vercel-og
 ```
 
 Next, run Next.js in development mode:
