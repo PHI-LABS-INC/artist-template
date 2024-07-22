@@ -8,7 +8,7 @@ export const config = {
 export default async function handler(req: NextRequest) {
   const { searchParams } = req.nextUrl;
   const address = searchParams.get('address');
-  const value = searchParams.get('value');
+  const value = searchParams.get('data');
 
   if (!address || !value) {
     return new Response('Invalid address or value.', { status: 400 });

@@ -4,7 +4,7 @@ import GIFEncoder from 'gifencoder';
 import path from 'path';
 
 export default function handler(req: VercelRequest, res: VercelResponse) {
-  const { address = '0xa', value = '0' } = req.query;
+  const { address = '0xa', data = '0' } = req.query;
   const width = 512;
   const height = 512;
   const canvas = createCanvas(width, height);
@@ -28,9 +28,9 @@ export default function handler(req: VercelRequest, res: VercelResponse) {
     ctx.font = '50px Roboto';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    console.log(`Address: ${address}`, `Value: ${value}`);
+    console.log(`Address: ${address}`, `Value: ${data}`);
     ctx.fillText(`Address: ${address}`, width / 2, height / 2 - 50);
-    ctx.fillText(`Value: ${value} ETH`, width / 2, height / 2 + 50);
+    ctx.fillText(`Value: ${data} ETH`, width / 2, height / 2 + 50);
 
     ctx.strokeStyle = `hsl(${i * 36}, 50%, 50%)`;
     ctx.lineWidth = 10;

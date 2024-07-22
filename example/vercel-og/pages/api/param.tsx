@@ -9,7 +9,7 @@ export default function handler(req: NextRequest) {
   try {
     const { searchParams } = new URL(req.url);
     const address = searchParams.get('address');
-    const value = searchParams.get('value');
+    const value = searchParams.get('data');
 
     if (!address || !value) {
       return new Response('Invalid address or value.', { status: 400 });
